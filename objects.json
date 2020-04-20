@@ -69,23 +69,23 @@
 		"warm": {
 			"name": "Warm"
 		},
-		"frozen": {
+		"temperate": {
 			"name": "Temperate"
 		},
-		"frozen": {
+		"cool": {
 			"name": "Cool"
 		},
-		"frozen": {
+		"cold": {
 			"name": "Cold"
 		},
 		"frozen": {
 			"name": "Frozen"
 		},
-		"barren": {
-			"name": "Barren"
+		"terrestrial": {
+			"name": "Terrestrial"
 		},
-		"telluric": {
-			"name": "Telluric"
+		"superterrestrial": {
+			"name": "Superterrestrial"
 		},
 		"gasGiant": {
 			"name": "Gas Giant"
@@ -359,47 +359,47 @@
 			"contentsCount": [4, 7],
 			"contents": [
 				{
-					"id": "star",
-					"weight": 3,
+					"id": "starSystem",
+					"weight": 1,
 					"props": [
 						{
 							"id": "red",
 							"chance": 0.7,
-							"excludes": "yellow white blue"
+							"excludes": "yellow white blue",
 						},
 						{
 							"id": "yellow",
-							"chance": 0.33,
-							"excludes": "white blue"
+							"chance": 0.5,
+							"excludes": "white blue dwarf",
 						},
 						{
 							"id": "white",
-							"chance": 0.6,
-							"excludes": "blue"
+							"chance": 0.8,
+							"excludes": "blue hypergiant",
 						},
 						{
 							"id": "blue",
 							"chance": 1,
-							"excludes": "dwarf"
+							"excludes": "dwarf supergiant hypergiant",
 						},
 						{
 							"id": "dwarf",
 							"chance": 0.5,
-							"excludes": "giant supergiant hypergiant"
+							"excludes": "giant supergiant hypergiant",
 						},
 						{
 							"id": "giant",
 							"chance": 0.4,
-							"excludes": "supergiant hypergiant"
+							"excludes": "supergiant hypergiant",
 						},
 						{
 							"id": "supergiant",
-							"chance": 0.225,
-							"excludes": "hypergiant"
+							"chance": 0.4,
+							"excludes": "hypergiant",
 						},
 						{
 							"id": "hypergiant",
-							"chance": 0.125
+							"chance": 0.2,
 						}
 					]
 				},
@@ -410,41 +410,41 @@
 						{
 							"id": "red*",
 							"chance": 0.7,
-							"excludes": "yellow* white* blue*"
+							"excludes": "yellow* white* blue*",
 						},
 						{
 							"id": "yellow*",
-							"chance": 0.33,
-							"excludes": "white* blue*"
+							"chance": 0.5,
+							"excludes": "white* blue* dwarf*",
 						},
 						{
 							"id": "white*",
-							"chance": 0.6,
-							"excludes": "blue*"
+							"chance": 0.8,
+							"excludes": "blue* hypergiant*",
 						},
 						{
 							"id": "blue*",
 							"chance": 1,
-							"excludes": "dwarf*"
+							"excludes": "dwarf* supergiant* hypergiant*",
 						},
 						{
 							"id": "dwarf*",
 							"chance": 0.5,
-							"excludes": "giant* supergiant* hypergiant*"
+							"excludes": "giant* supergiant* hypergiant*",
 						},
 						{
 							"id": "giant*",
-							"chance": 0.2,
-							"excludes": "supergiant* hypergiant*"
+							"chance": 0.4,
+							"excludes": "supergiant* hypergiant*",
 						},
 						{
 							"id": "supergiant*",
-							"chance": 0.225,
-							"excludes": "hypergiant*"
+							"chance": 0.4,
+							"excludes": "hypergiant*",
 						},
 						{
 							"id": "hypergiant*",
-							"chance": 0.125
+							"chance": 0.2,
 						}
 					]
 				}
